@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!--<script src="script/jquery-2.1.3.min.js" charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="preload" as="font" href="https://fonts.googleapis.com/css2?family=Mali:wght@300&display=swap">
+    <script src="script/jquery-2.1.3.min.js" charset="utf-8"></script>-->
+    <!--<script src="script/master1.js" charset="utf-8"></script>-->
+    <!--
+    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    const script = document.createElement("script");
+            script.src = 'script/jquery-2.1.3.min.js'; document.body.appendChild(script);
+            const script2 = document.createElement("script");
+            script2.src = 'script/master1.js'; document.body.appendChild(script2);
+
+    -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nottes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/jquery-2.1.3.min.js" charset="utf-8"></script>
+    <script src="script/master.js" charset="utf-8"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <!--<div class="main-wrapper">-->
+        <div class="logo">
+          Notes : )
+        </div>
+        <!--<div class="nv">-->
+          <nav>
+            <ul>
+              <li><a href="http://localhost/tests/00notes/index1.html">Home</a></li>
+            </ul>
+          </nav>
+        <!--</div>-->
+      <!--</div>-->
+    </header>
+
+    <div class="sb-container">
+      <div class="wrapper">
+
+        <div class="d-container">
+
+          <div class="slct-inner">
+
+            <div class="all-st">
+              <div class="">
+                <select class="st-slt" name="stream">
+                  <option value="">Get Notes</option>
+                  <option value="bsc">Bsc</option>
+                  <option value="bca">Bca</option>
+                </select>
+              </div>
+            </div>
+            <div class="st-sub all-st">
+              <div class="st-sub-inner">
+                <select class="st-sbj" name="">
+
+                </select>
+              </div>
+            </div>
+            <div class="st-sem all-st">
+              <div class="st-sem-inner">
+                <select class="st-semst" name="">
+
+                </select>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="u-container">
+
+          <div class="up-inner">
+            <fieldset class="field">
+              <legend>Want to Upload</legend>
+              <div class="upfield-inner">
+                <form class="upf" id="up-f" action="core/worker.php" method="post" enctype="multipart/form-data">
+                  <ul>
+                    <!--<li><input type="text" name="cat" placeholder="Select category"></li>-->
+                    <li>
+                      <select class="up-slt" name="stream">
+                        <option value="">Choose Subject</option>
+                        <option value="bsc">Bsc</option>
+                        <option value="bca">Bca</option>
+                      </select>
+                    </li>
+                    <li>
+                      <div class="up-sub">
+                        <div class="up-sub-inner">
+                          <select class="up-sbj" name="">
+
+                          </select>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="up-sem">
+                        <div class="up-sem-inner">
+                          <select class="up-semst" name="">
+
+                          </select>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <input type="file" name="files[]" value="" class="upfile" id="file" data-multiple-caption="{count} files selected" multiple>
+                      <label for="file" class="fsize" id="uplab">Choose a file</label>
+                    </li>
+                    <li><input type="submit" name="" class="up-btn fsize" id="upbtn" value="UPLOAD"></li>
+                    <!--<li><input type="button" name="" class="up-btn" id="upbtn" value="UPLOAD"></li>-->
+                    <li>
+                      <div class="error" id="err">
+
+                      </div>
+                    </li>
+                  </ul>
+                </form>
+              </div>
+            </fieldset>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <footer>
+      <div class="ft">
+        <div class="ft-inner">
+          © 2004-2020 UV.in - Nooottteeesss .
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

@@ -1,0 +1,309 @@
+html{
+  height:100%; //
+  min-height: 100%;
+}
+body{
+  position: relative; //
+  background-color: #f2f2f2;
+  background-color: #1b1b1c;
+  font-family: Google Sans, Noto Sans, Noto Sans JP, Noto Sans KR, Noto Naskh Arabic, Noto Sans Thai, Noto Sans Hebrew, Noto Sans Bengali, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 30px;
+  padding: 0;
+  margin: 0;
+  color: white;
+  min-height: 100%;
+}
+@media screen and (max-width: 450px){
+  body{
+    font-size: 16px;
+    font-weight: 100;
+  }
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+/** Header */
+header{
+  position: fixed;
+  width: 100%;
+  height: 52px;
+  //background-color: lightblue;
+  z-index: 1;
+}
+.header-main{
+  width: 100%;
+  padding: 5px;
+  border-style: solid;
+  border-color: #292929;
+  //border: 3px solid #292929;
+  border-width: 0 0 1px 0;
+  background-color: #1b1b1c;
+  //box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.12);
+  animation: 2s all ease-in;
+}
+.head-lg{
+  display: inline-block;
+  margin: 0px;
+  padding: 5px;
+  //background-color: lightskyblue;
+}
+.lg{
+  //background-color: grey;
+}
+.head-nav{
+  display: inline-block;
+  margin: 0px;
+  padding: 5px;
+  //background-color: lightblue;
+}
+.head-nav nav ul li{
+  list-style: none;
+  display: inline-block;
+  padding-right: 10px;
+  //background-color: blue;
+}
+.head-nav nav ul {
+  text-align: right;
+  margin: 0px;
+}
+/** Header ends here */
+
+/** containerr */
+.containerr{
+  position: relative;
+  //top: 0px;
+  width: 100%;
+  height: auto;
+  //background-color: hotpink;
+}
+
+.c-main{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/** containerr ends here*/
+
+/** nl-cont*/
+.nl-cont{
+  position: relative;
+  //top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  opacity: 0.8;
+  text-align: center;
+}
+/** nl-cont ends here*/
+
+/** nl-cont-c* */
+.nl-c{
+  //position: relative;
+  //padding: 2px;
+  //display: inline-block;
+  //width: 100%;
+  //background-color: lightskyblue;
+  border: 1px solid green;
+}
+/** nl-cont-c*  ends here*/
+
+/** slct */
+.slct{
+  position: relative;
+  //top: 100px;
+  margin-top: 100px;
+  height: 220px;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  //background-color: white;
+  //opacity: 0.5;
+  text-align: center;
+}
+.slct-inner{
+  height: 200px;
+}
+.all-st{
+  display: block;
+}
+.slct select{
+  padding: 4px;
+  width: 40%;
+  //text-indent: 5px;
+  text-align-last: center;
+  border: 1px groove white;
+  background-color: black;
+}
+@media screen and (max-width: 450px){
+  .slct select{
+    width: 60%;
+  }
+}
+.slct select{
+  background-color: black;
+}
+.st-sub, .st-sem{
+  display: none;
+}
+.st-inner{
+  text-align: center;
+}
+.slct-inner .field{
+  //height: 200px;
+}
+/** slct  ends here*/
+
+/**upoad container */
+
+.up-container{
+  position: relative;
+  //top: 150px;
+  padding: 10px;
+  height: 500px;
+  //background-color: hotpink;
+  text-align: center;
+  overflow: hidden;
+}
+.up-inner{
+  padding: 10px;
+  //background-color: skyblue;
+}
+.up-inner ul{
+  padding: 2px;
+}
+.up-inner ul li{
+  list-style: none;
+  padding: 10px;
+}
+
+.field{
+  margin:0 auto;
+  padding: 10px;
+  text-align: left;
+  //border: 2px solid #cce9e9;
+  border: 2px solid #292929;
+  border-radius: 4px;
+  width: 80%;
+}
+.field legend{
+  border: 0;
+  color: white;
+  width: auto;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.upfield-inner{
+  text-align: center;
+}
+.upf input{
+  margin: auto;
+  text-align: center;
+  border: 1px solid white;
+  background-color: black;
+}
+.upf input[type="file"]{
+  width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.upfile + label {
+  font-weight: 100;
+  width: 50%;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid white;
+  background-color: black;
+}
+.upfile:focus + label {
+	outline: 1px dotted #000;
+	outline: -webkit-focus-ring-color auto 5px;
+}
+.up-container select{
+  padding: 4px;vS34567890
+  width: 50%;
+  //text-indent: 5px;
+  text-align-last: center;
+  border: 1px groove white;
+  background-color: black;
+}
+
+#upbtn{
+  width: 35%;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+@media screen and (max-width: 450px){
+  .up-inner input[type="file"]{
+    //width: 80%;
+  }
+  #uplab{
+    width: 80%;
+  }
+  .up-container select{
+    width: 80%;
+  }
+  #upbtn{
+    width: auto;
+  }
+}
+@media screen and (max-width: 370px){
+  /*.up-inner input[type="file"]{
+    width: 90%;
+    line-height: 26px;
+  }*/
+}
+.up-sub, .up-sem{
+  display: none;
+}
+
+/**upoad container ends here*/
+
+/** ft*/
+footer{
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+}
+.ft{
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  font-size: 8px;
+  color: white;
+  text-align: center;
+  border-style: solid;
+  border-color: #292929;
+  //border: 3px solid #292929;
+  border-width: 3px 0 0 0;
+}
+/** ft  ends here*/
+
+/** notes.php  */
+/** c-inner */
+.c-inner{
+  padding: 10px;
+}
+.c-temp{
+  padding: 5px;
+  border: 2px solid #232629;
+  border-radius: 5px;
+  height: 100%;
+}
+/** c-inner ends here */
+
+.c-temp ul{
+  padding: 15px;
+}
+.c-temp ul li{
+  list-style: none;
+  border-bottom: 1px groove grey;
+  border-bottom-width: 50%;
+}
+/** notes.php ends here */
